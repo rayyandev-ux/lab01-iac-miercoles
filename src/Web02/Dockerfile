@@ -1,5 +1,8 @@
 FROM nginx:trixie-perl
 
-COPY Web02/index.html /usr/share/nginx/html
+COPY index.html /usr/share/nginx/html
 
-EXPOSE 4001
+EXPOSE 80
+
+#docker build -t web02 .
+#docker run --name test3 -p 8081:4001 web02
